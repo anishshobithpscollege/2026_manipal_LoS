@@ -1,10 +1,10 @@
 {
-  "author": "Student Name",
-  "reg_no": "241234567",
+  "author": "Anish Shobith P S",
+  "reg_no": "261100690032",
   "institution": "Manipal School of Information Sciences",
   "kinds": {
-    "Theory": { "course": "Subject Name", "course_code": "SUB 1001" },
-    "Lab": { "course": "Subject Name Lab", "course_code": "SUB 1002" }
+    "Theory": { "course": "Linux OS and Scripting", "course_code": "CYE 5103" },
+    "Lab": { "course": "Linux OS and Scripting Lab", "course_code": "CYE 5153" }
   },
   "logo": "/template/assets/logo.png",
   "logo_width_cm": 2.8
