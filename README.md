@@ -18,7 +18,9 @@ _None yet. Add one under `assignments/theory/`._
 
 <!-- LAB:START -->
 
-_None yet. Add one under `assignments/lab/`._
+| # | Assignment | Download |
+| :-- | :-- | :-- |
+| 01 | System Update and Tool Availability Check | [PDF](../../releases/download/latest/261100690032_Anish_Shobith_P_S_Linux_OS_and_Scripting_Lab_CYE_5153_01.pdf) |
 
 <!-- LAB:END -->
 
