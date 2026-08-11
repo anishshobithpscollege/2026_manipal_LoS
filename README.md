@@ -9,13 +9,17 @@ Every push to `main` compiles each assignment to a PDF and attaches it to the [l
 ### Theory
 
 <!-- THEORY:START -->
+
 _None yet. Add one under `assignments/theory/`._
+
 <!-- THEORY:END -->
 
 ### Lab
 
 <!-- LAB:START -->
+
 _None yet. Add one under `assignments/lab/`._
+
 <!-- LAB:END -->
 
 ## Set your identity
