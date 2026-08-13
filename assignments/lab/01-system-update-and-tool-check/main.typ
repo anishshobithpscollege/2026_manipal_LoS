@@ -4,6 +4,7 @@
   title: "System Update and Tool Availability Check",
   number: "Assignment 01",
   kind: "Lab",
+  date: datetime(year: 2026, month: 8, day: 11)
 )
 
 = Update the system

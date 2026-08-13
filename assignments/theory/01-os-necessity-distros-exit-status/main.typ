@@ -5,6 +5,7 @@
   number: "Assignment 01",
   kind: "Theory",
   keywords: ("operating system", "linux", "cybersecurity distributions", "exit status"),
+  date: datetime(year: 2026, month: 8, day: 13)
 )
 
 #show figure.where(kind: table): set block(breakable: true)
