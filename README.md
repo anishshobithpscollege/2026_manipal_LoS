@@ -25,6 +25,7 @@ Every push to `main` compiles each assignment to a PDF and attaches it to the [l
 | :-- | :-- | :-- |
 | 01 | System Update and Tool Availability Check | [PDF](../../releases/download/latest/261100690032_Anish_Shobith_P_S_Linux_OS_and_Scripting_Lab_CYE_5153_01.pdf) |
 | 02 | Getting Help, Basic Commands, Globbing and Filters | [PDF](../../releases/download/latest/261100690032_Anish_Shobith_P_S_Linux_OS_and_Scripting_Lab_CYE_5153_02.pdf) |
+| 03 | Grep, Regular Expressions and File Test Operators | [PDF](../../releases/download/latest/261100690032_Anish_Shobith_P_S_Linux_OS_and_Scripting_Lab_CYE_5153_03.pdf) |
 
 <!-- LAB:END -->
 
