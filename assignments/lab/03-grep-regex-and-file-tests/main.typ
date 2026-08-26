@@ -5,7 +5,7 @@
   title: "Grep, Regular Expressions and File Test Operators",
   number: "Assignment 03",
   kind: "Lab",
-  date: datetime(year: 2026, month: 8, day: 27),
+  date: datetime(year: 2026, month: 8, day: 26),
 )
 
 #let sh(body) = codly.local(number-format: none)[#raw(body, lang: "bash", block: true)]
