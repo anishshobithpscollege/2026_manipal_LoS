@@ -1,0 +1,11 @@
+INFO System started successfully
+INFO User student logged in
+WARNING Disk usage reached 80 percent
+INFO Backup process started
+ERROR Backup operation failed
+INFO User admin logged in
+WARNING Unusual file activity detected
+ERROR Permission denied while accessing file
+INFO System scan completed
+FAILED Security update installation
+INFO System shutdown initiated

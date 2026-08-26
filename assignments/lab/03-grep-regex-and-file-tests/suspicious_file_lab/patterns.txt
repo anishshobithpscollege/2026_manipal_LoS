@@ -1,0 +1,8 @@
+wget
+curl
+nc
+chmod
+password
+FAILED
+ERROR
+WARNING

@@ -1,0 +1,16 @@
+report.txt
+system.log
+access.log
+config.conf
+payload.sh
+update.sh
+cleanup.sh
+scanner.py
+malware1.sh
+malware2.sh
+malwareA.sh
+script1.py
+script2.py
+notes.pdf
+empty.txt
+restricted.txt

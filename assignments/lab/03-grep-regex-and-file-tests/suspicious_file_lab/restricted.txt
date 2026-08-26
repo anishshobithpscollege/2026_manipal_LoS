@@ -1,0 +1,1 @@
+Restricted test file for permission exercises.
