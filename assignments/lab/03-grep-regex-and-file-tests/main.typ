@@ -22,9 +22,9 @@
 
 Use `grep`, extended regular expressions (`grep -E`), file test operators, and
 the conditional constructs `[ ]` and `[[ ]]` to triage sample files in the
-`suspicious_file_lab/` directory. Parts A to E are run from inside that
-directory. The scripts for Parts F to K are in the `scripts/` folder and prompt
-for the filename with `read`.
+`suspicious_file_lab/` directory. The commands in Parts A to E run from inside
+that directory. The scripts for Parts F to K are in the `scripts/` folder and
+prompt for the filename with `read`.
 
 = Part A: Basic grep
 
@@ -88,10 +88,10 @@ for the filename with `read`.
 #q([Two lines around FAILED.], "grep -C2 FAILED system.log",
   res: "ERROR Permission denied while accessing file\nINFO System scan completed\nFAILED Security update installation\nINFO System shutdown initiated")
 
-Context matters because an error line does not explain itself. The lines before
-show the trigger and the preceding operation, and the lines after show the
-consequence and whether the system recovered. Together they give the sequence
-needed to establish the cause, scope, and timeline of an incident.
+An error line rarely explains itself. The lines before it show what led to the
+failure, and the lines after show what it caused and whether the system
+recovered. Reading both sides gives the sequence needed to establish the cause,
+scope, and timeline of an incident.
 
 = Part C: grep -E
 
