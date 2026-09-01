@@ -1,0 +1,124 @@
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ id
+uid=1000(msis) gid=1000(msis) groups=1000(msis),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),114(lpadmin)
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ w
+ 09:42:05 up 33 min,  1 user,  load average: 0.05, 0.03, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU  WHAT
+msis     tty2     -                09:09   33:13   0.02s  0.02s /usr/libexec/gn
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ grep "^msis:" /etc/passwd
+msis:x:1000:1000:MSIS:/home/msis:/bin/bash
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ wc -l /etc/passwd
+53 /etc/passwd
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ cut -d: -f1,3 /etc/passwd
+root:0
+daemon:1
+bin:2
+sys:3
+sync:4
+games:5
+man:6
+lp:7
+mail:8
+news:9
+uucp:10
+proxy:13
+www-data:33
+backup:34
+list:38
+irc:39
+_apt:42
+nobody:65534
+systemd-network:998
+systemd-timesync:996
+dhcpcd:100
+messagebus:101
+syslog:102
+systemd-resolve:991
+uuidd:103
+usbmux:104
+tss:105
+systemd-oom:990
+kernoops:106
+whoopsie:107
+dnsmasq:999
+avahi:108
+tcpdump:109
+sssd:110
+speech-dispatcher:111
+cups-pk-helper:112
+fwupd-refresh:989
+saned:113
+geoclue:114
+cups-browsed:115
+hplip:116
+gnome-remote-desktop:988
+polkitd:987
+rtkit:117
+colord:118
+gnome-initial-setup:119
+gdm:120
+nm-openvpn:121
+msis:1000
+sshd:122
+administrator:1001
+_rpc:123
+statd:124
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ awk -F: '$3 == 0 {print $1}' /etc/passwd
+root
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ sudo useradd -m alice
+[sudo] password for msis:
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ sudo useradd -m bob
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ sudo useradd -m bob
+useradd: user 'bob' already exists
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ sudo useradd -m charlie
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ grep -E "alice|bob|charlie" /etc/passwd
+alice:x:1002:1002::/home/alice:/bin/sh
+bob:x:1003:1003::/home/bob:/bin/sh
+charlie:x:1004:1004::/home/charlie:/bin/sh
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ grep "^alice:" /etc/passwd
+alice:x:1002:1002::/home/alice:/bin/sh
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ ls -l /home
+total 20
+drwxr-x---  6 administrator administrator 4096 Jun 19 15:27 administrator
+drwxr-x---  2 alice         alice         4096 Sep  1 09:44 alice
+drwxr-x---  2 bob           bob           4096 Sep  1 09:44 bob
+drwxr-x---  2 charlie       charlie       4096 Sep  1 09:44 charlie
+drwxr-x--- 21 msis          msis          4096 Aug 31 12:11 msis
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ sudo passwd alice
+New password:
+BAD PASSWORD: The password is shorter than 8 characters
+Retype new password:
+passwd: password updated successfully
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ sudo passwd bob
+New password:
+BAD PASSWORD: The password is shorter than 8 characters
+Retype new password:
+passwd: password updated successfully
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ sudo passwd charlie
+New password:
+BAD PASSWORD: The password is shorter than 8 characters
+Retype new password:
+passwd: password updated successfully
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ sudo su - alice
+$ whoami
+alice
+$ exit
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ sudo groupadd security
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ sudo groupadd developers
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ sudo usermod -aG security alice
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ sudo usernmod -aG security charlie
+sudo: usernmod: command not found
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ sudo usermod -aG security charlie
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ sudo usermod -aG developers bob
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ id alice
+uid=1002(alice) gid=1002(alice) groups=1002(alice),1005(security)
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ id bob
+uid=1003(bob) gid=1003(bob) groups=1003(bob),1006(developers)
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ id charlie
+uid=1004(charlie) gid=1004(charlie) groups=1004(charlie),1005(security)
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ grep -E "security|developers" /etc/group
+security:x:1005:alice,charlie
+developers:x:1006:bob
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ sudo usermod -aG security bob
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ id bob
+uid=1003(bob) gid=1003(bob) groups=1003(bob),1005(security),1006(developers)
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$

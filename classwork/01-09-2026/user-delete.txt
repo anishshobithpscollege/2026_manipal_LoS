@@ -1,0 +1,16 @@
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ sudo userdel -r alice
+sudo userdel -r bob
+sudo userdel -r charlie
+userdel: alice mail spool (/var/mail/alice) not found
+userdel: bob mail spool (/var/mail/bob) not found
+userdel: charlie mail spool (/var/mail/charlie) nomsismsmsmsmmsmmmsimsismsis@mmsis@mmsis@mmsis@msmsmsis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ sudo groupdel security
+sudo groupdel developers
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ grep -E "alice|bob|charlie" /etc/passwd
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ ^[[200~ls -l /home
+ls: command not found
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ ls -l /home
+total 8
+drwxr-x---  6 administrator administrator 4096 Jun 19 15:27 administrator
+drwxr-x--- 21 msis          msis          4096 Aug 31 12:11 msis
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ grep -E "security|developers" /etc/group
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$
