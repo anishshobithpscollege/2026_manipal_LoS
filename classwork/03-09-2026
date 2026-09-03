@@ -1,0 +1,122 @@
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ cd anish
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish$ mkdir ownership_lab
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish$ cd ownership_lab
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ touch incident_report.txt network.log credentials.txt
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ ls -l
+total 0
+-rw-r--r-- 1 msis msis 0 Sep  3 09:02 credentials.txt
+-rw-r--r-- 1 msis msis 0 Sep  3 09:02 incident_report.txt
+-rw-r--r-- 1 msis msis 0 Sep  3 09:02 network.log
+
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ stat incident_report.txt network.log credentials.txt
+  File: incident_report.txt
+Access: (0644/-rw-r--r--)  Uid: ( 1000/   msis)   Gid: ( 1000/   msis)
+  File: network.log
+Access: (0644/-rw-r--r--)  Uid: ( 1000/   msis)   Gid: ( 1000/   msis)
+  File: credentials.txt
+Access: (0644/-rw-r--r--)  Uid: ( 1000/   msis)   Gid: ( 1000/   msis)
+
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ id
+uid=1000(msis) gid=1000(msis) groups=1000(msis),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),114(lpadmin)
+
+Owner: msis (1000), Group: msis (1000)
+Owner perms: rw-, Group perms: r--, Others: r--
+Files created with current user as owner, difference between ownership and permissions: ownership is WHO owns, permissions is WHAT they can do
+
+PART B: CHOWN - CHANGING OWNERSHIP
+
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ sudo chown alice incident_report.txt
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ sudo chown bob network.log
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ sudo chown charlie credentials.txt
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ ls -l
+total 0
+-rw-r--r-- 1 charlie msis 0 Sep  3 09:05 credentials.txt
+-rw-r--r-- 1 alice   msis 0 Sep  3 09:05 incident_report.txt
+-rw-r--r-- 1 bob     msis 0 Sep  3 09:05 network.log
+
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ touch test_file.txt
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ chown alice test_file.txt
+chown: changing ownership of 'test_file.txt': Operation not permitted
+
+Ordinary users can't change file ownership - only root can. Prevents privilege escalation and hiding files.
+
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ sudo chown alice:security incident_report.txt
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ ls -l incident_report.txt
+-rw-r--r-- 1 alice security 0 Sep  3 09:06 incident_report.txt
+
+PART C: CHGRP - CHANGING GROUP OWNERSHIP
+
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ sudo chgrp developers network.log
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ sudo chgrp security credentials.txt
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ ls -l
+total 0
+-rw-r--r-- 1 charlie security   0 Sep  3 09:07 credentials.txt
+-rw-r--r-- 1 alice   security   0 Sep  3 09:06 incident_report.txt
+-rw-r--r-- 1 bob     developers 0 Sep  3 09:07 network.log
+
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ id alice
+uid=1002(alice) gid=1002(alice) groups=1002(alice),1005(security)
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ id bob
+uid=1003(bob) gid=1003(bob) groups=1003(bob),1005(security),1006(developers)
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ id charlie
+uid=1004(charlie) gid=1004(charlie) groups=1004(charlie),1005(security)
+
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ sudo su - alice
+alice@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ cd ~/anish/ownership_lab
+alice@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ touch alice_report.txt
+alice@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ chgrp security alice_report.txt
+alice@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ ls -l alice_report.txt
+-rw-r--r-- 1 alice security 0 Sep  3 09:08 alice_report.txt
+
+alice@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ chgrp developers alice_report.txt
+chgrp: changing group of 'alice_report.txt' to 'developers': Operation not permitted
+
+alice@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ exit
+
+Users can only change group to groups they're members of. Alice in security but not developers, so only security works.
+
+PART D: OWNERSHIP + PERMISSION INVESTIGATION
+
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ sudo chmod 640 incident_report.txt
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ ls -l incident_report.txt
+-rw-r----- 1 alice security 0 Sep  3 09:09 incident_report.txt
+
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ sudo su - charlie
+charlie@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ cd ~/anish/ownership_lab
+charlie@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ cat incident_report.txt
+
+charlie@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ echo "test" >> incident_report.txt
+bash: incident_report.txt: Permission denied
+
+charlie@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ rm incident_report.txt
+rm: cannot remove 'incident_report.txt': Permission denied
+charlie@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ exit
+
+With 640: charlie can read (group member), cannot write (group has r only), cannot delete
+
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ sudo chmod 660 incident_report.txt
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ ls -l incident_report.txt
+-rw-rw---- 1 alice security 0 Sep  3 09:09 incident_report.txt
+
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ sudo su - charlie
+charlie@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ cd ~/anish/ownership_lab
+charlie@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ cat incident_report.txt
+
+charlie@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ echo "modified" >> incident_report.txt
+charlie@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ cat incident_report.txt
+modified
+charlie@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ exit
+
+With 660: charlie can read and write (group now has rw). Ownership unchanged, only permissions changed, so access changed.
+
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ sudo usermod -G developers bob
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ id bob
+uid=1003(bob) gid=1003(bob) groups=1003(bob),1006(developers)
+
+msis@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ sudo su - bob
+bob@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~$ cd ~/anish/ownership_lab
+bob@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ cat incident_report.txt
+cat: incident_report.txt: Permission denied
+bob@msis-HP-Pro-Tower-400-G9-PCI-Desktop-PC:~/anish/ownership_lab$ exit
+
+Bob removed from security group, file still 660 alice:security, bob falls into others category (---), cannot access. Ownership and permissions didn't change, but group membership change revoked access.
