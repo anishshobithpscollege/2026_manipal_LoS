@@ -1,0 +1,7 @@
+[2025-08-18 08:10:01] INFO Server startup completed on 192.168.10.5 port 8080
+[2025-08-18 08:12:03] Failed login for user root from 203.0.113.45 port 4444
+[2025-08-18 08:12:10] Failed login for user root from 203.0.113.45 port 4444
+[2025-08-18 08:12:17] Failed login for user root from 203.0.113.45 port 4444
+[2025-08-18 08:15:44] ERROR Connection denied from 198.51.100.77 port 9001
+[2025-08-18 08:29:11] INFO Connection from 10.1.2.3 port 22
+18

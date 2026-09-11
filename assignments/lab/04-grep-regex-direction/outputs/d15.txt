@@ -1,0 +1,5 @@
+      2 updates.bad-domain.ru
+      2 malware-test.example.org
+      1 www.example.com
+      1 target.example.com
+      1 shop.example.com

@@ -1,0 +1,6 @@
+[2025-08-18 08:33:55] WARNING URL https://shop.example.com/admin.php status 404
+[2025-08-18 08:34:16] ERROR URL http://legacy.example.net/login.php status 500
+[2025-08-18 08:35:04] WARNING URL https://updates.bad-domain.ru/update.php status 302
+[2025-08-18 08:40:51] WARNING Request from 203.0.113.99 status 404
+[2025-08-18 08:41:13] ERROR Request from 203.0.113.99 status 500
+[2025-08-18 08:41:36] Suspicious request from 198.51.100.77 status 403

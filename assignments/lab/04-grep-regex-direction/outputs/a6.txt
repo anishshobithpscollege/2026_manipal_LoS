@@ -1,0 +1,9 @@
+[2025-08-18 08:12:03] Failed login for user root from 203.0.113.45 port 4444
+[2025-08-18 08:12:10] Failed login for user root from 203.0.113.45 port 4444
+[2025-08-18 08:12:17] Failed login for user root from 203.0.113.45 port 4444
+[2025-08-18 08:13:02] WARNING Multiple authentication failures from 203.0.113.45
+[2025-08-18 08:15:44] ERROR Connection denied from 198.51.100.77 port 9001
+[2025-08-18 08:16:05] Suspicious connection from 198.51.100.77 to evilc2.ddns.net:9001
+[2025-08-18 08:16:19] Suspicious outbound request https://evilc2.ddns.net/update.php
+[2025-08-18 08:18:07] WARNING Request to http://malware-test.example.org/download.php from 10.20.30.40
+66

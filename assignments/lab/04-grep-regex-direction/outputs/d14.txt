@@ -1,0 +1,5 @@
+     14 .exe
+      9 .php
+      8 .pdf
+      5 .sh
+      1 .html

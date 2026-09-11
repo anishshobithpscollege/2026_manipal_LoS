@@ -1,0 +1,6 @@
+[2025-08-18 08:10:01] INFO Server startup completed on 192.168.10.5 port 8080
+[2025-08-18 08:11:14] INFO User admin logged in from 192.168.10.21
+[2025-08-18 08:12:03] Failed login for user root from 203.0.113.45 port 4444
+[2025-08-18 08:12:10] Failed login for user root from 203.0.113.45 port 4444
+[2025-08-18 08:12:17] Failed login for user root from 203.0.113.45 port 4444
+47

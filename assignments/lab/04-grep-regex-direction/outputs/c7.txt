@@ -1,0 +1,7 @@
+[2025-08-18 08:18:20] Suspicious file download evil.exe from http://malware-test.example.org/evil.exe
+[2025-08-18 08:18:32] ERROR file evil.exe hash MD5=44d88612fea8a8f36de82e1278abb02f
+[2025-08-18 08:19:04] INFO file report.pdf saved to /home/analyst/downloads/report.pdf
+[2025-08-18 08:19:45] Suspicious file invoice_2025.pdf downloaded from https://phishing-example.com/invoice_2025.pdf
+[2025-08-18 08:24:01] Suspicious SHA1 hash=3395856ce81f2b7382dee72602f798b642f14140 file updater.sh
+[2025-08-18 08:24:25] Suspicious SHA256 hash=275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f file payload.exe
+19

@@ -1,0 +1,5 @@
+[2025-08-18 09:01:12] INFO GET https://www.example.com/index.html status 200 from 192.168.10.21
+[2025-08-18 09:02:40] WARNING GET https://shop.example.com/admin.php status 404 from 203.0.113.99
+[2025-08-18 09:03:55] ERROR GET http://legacy.example.net/login.php status 500 from 198.51.100.77
+[2025-08-18 09:05:07] Suspicious GET http://malware-test.example.org/evil.exe status 200 from 10.20.30.40
+[2025-08-18 09:06:31] INFO POST https://files.example.com/upload.php status 201 from 10.10.5.23

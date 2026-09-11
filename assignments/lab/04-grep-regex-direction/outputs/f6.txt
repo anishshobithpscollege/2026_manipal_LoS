@@ -1,0 +1,3 @@
+attacker123@phishing-example.com
+phishing.alert@evilmail.ru
+student2025@university.in

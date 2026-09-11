@@ -1,0 +1,9 @@
+[2025-08-18 08:18:07] WARNING Request to http://malware-test.example.org/download.php from 10.20.30.40
+[2025-08-18 08:18:20] Suspicious file download evil.exe from http://malware-test.example.org/evil.exe
+[2025-08-18 08:19:04] INFO file report.pdf saved to /home/analyst/downloads/report.pdf
+[2025-08-18 08:19:45] Suspicious file invoice_2025.pdf downloaded from https://phishing-example.com/invoice_2025.pdf
+[2025-08-18 08:35:30] Suspicious download https://updates.bad-domain.ru/update.php to /tmp/update.sh
+[2025-08-18 08:35:58] Suspicious download http://evil.example.net/dropper.exe to C:\Temp\dropper.exe
+[2025-08-18 08:36:47] INFO Upload completed to https://files.example.com/upload.php
+[2025-08-18 08:37:12] WARNING upload attempt denied for user guest
+[2025-08-18 08:47:04] Suspicious download of file backdoor.exe from https://command.bad-domain.in/backdoor.exe

@@ -1,0 +1,1 @@
+17:[2025-08-18 08:20:10] WARNING Email received from attacker123@phishing-example.com

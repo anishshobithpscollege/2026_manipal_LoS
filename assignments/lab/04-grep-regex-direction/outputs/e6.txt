@@ -1,0 +1,6 @@
+[2025-08-18 08:18:32] ERROR file evil.exe hash MD5=44d88612fea8a8f36de82e1278abb02f
+[2025-08-18 08:24:01] Suspicious SHA1 hash=3395856ce81f2b7382dee72602f798b642f14140 file updater.sh
+[2025-08-18 08:24:25] Suspicious SHA256 hash=275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f file payload.exe
+[2025-08-18 08:24:46] INFO MD5 hash=e2fc714c4727ee9395f324cd2e7f331f file archive.pdf
+[2025-08-18 08:36:19] ERROR file dropper.exe hash SHA256=3a7bd3e2360a3d80a9d0b7b93d7f90d7c0b8c9a3e9f1d2c4b5a6978877665544
+[2025-08-18 08:45:49] ERROR file malware.exe hash MD5=5d41402abc4b2a76b9719d911017c592

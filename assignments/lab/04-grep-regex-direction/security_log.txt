@@ -1,0 +1,91 @@
+[2025-08-18 08:10:01] INFO Server startup completed on 192.168.10.5 port 8080
+[2025-08-18 08:11:14] INFO User admin logged in from 192.168.10.21
+[2025-08-18 08:12:03] Failed login for user root from 203.0.113.45 port 4444
+[2025-08-18 08:12:10] Failed login for user root from 203.0.113.45 port 4444
+[2025-08-18 08:12:17] Failed login for user root from 203.0.113.45 port 4444
+[2025-08-18 08:13:02] WARNING Multiple authentication failures from 203.0.113.45
+[2025-08-18 08:14:33] INFO Successful login for user analyst from 10.10.5.23
+[2025-08-18 08:15:44] ERROR Connection denied from 198.51.100.77 port 9001
+[2025-08-18 08:16:05] Suspicious connection from 198.51.100.77 to evilc2.ddns.net:9001
+[2025-08-18 08:16:19] Suspicious outbound request https://evilc2.ddns.net/update.php
+[2025-08-18 08:17:31] INFO DNS query for portal.example.com from 192.168.10.21
+[2025-08-18 08:18:07] WARNING Request to http://malware-test.example.org/download.php from 10.20.30.40
+[2025-08-18 08:18:20] Suspicious file download evil.exe from http://malware-test.example.org/evil.exe
+[2025-08-18 08:18:32] ERROR file evil.exe hash MD5=44d88612fea8a8f36de82e1278abb02f
+[2025-08-18 08:19:04] INFO file report.pdf saved to /home/analyst/downloads/report.pdf
+[2025-08-18 08:19:45] Suspicious file invoice_2025.pdf downloaded from https://phishing-example.com/invoice_2025.pdf
+[2025-08-18 08:20:10] WARNING Email received from attacker123@phishing-example.com
+[2025-08-18 08:20:29] INFO Contact email security.team@example.com
+[2025-08-18 08:20:51] Suspicious email phishing.alert@evilmail.ru contained malicious attachment
+[2025-08-18 08:21:15] INFO User email student2025@university.in verified
+[2025-08-18 08:22:03] ERROR Exploit attempt CVE-2025-12345 from 203.0.113.99
+[2025-08-18 08:22:21] WARNING Vulnerability CVE-2024-3094 detected on server
+[2025-08-18 08:22:48] Suspicious exploit reference CVE-2025-987654 targeting https://target.example.com/login.php
+[2025-08-18 08:23:09] INFO Patch available for CVE-2023-44487
+[2025-08-18 08:24:01] Suspicious SHA1 hash=3395856ce81f2b7382dee72602f798b642f14140 file updater.sh
+[2025-08-18 08:24:25] Suspicious SHA256 hash=275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f file payload.exe
+[2025-08-18 08:24:46] INFO MD5 hash=e2fc714c4727ee9395f324cd2e7f331f file archive.pdf
+[2025-08-18 08:25:18] WARNING file payload.exe stored at C:\Users\Public\Downloads\payload.exe
+[2025-08-18 08:25:39] INFO file notes.pdf stored at C:\Users\Analyst\Documents\notes.pdf
+[2025-08-18 08:26:05] Suspicious script stored at /tmp/updater.sh
+[2025-08-18 08:26:31] WARNING Configuration modified /etc/ssh/sshd_config
+[2025-08-18 08:27:02] Suspicious persistence entry added to /etc/cron.d/system_update
+[2025-08-18 08:27:24] Suspicious crontab created for user root
+[2025-08-18 08:27:51] WARNING SSH key appended to /home/admin/.ssh/authorized_keys
+[2025-08-18 08:28:15] Suspicious service installed in /etc/systemd/system/update-agent.service
+[2025-08-18 08:28:49] WARNING startup script created /etc/init.d/network-update
+[2025-08-18 08:29:11] INFO Connection from 10.1.2.3 port 22
+[2025-08-18 08:29:32] INFO Connection from 10.1.2.3 port 22
+[2025-08-18 08:29:58] Failed login for user guest from 10.1.2.3 port 22
+[2025-08-18 08:30:17] Failed login for user guest from 10.1.2.3 port 22
+[2025-08-18 08:30:44] Failed login for user admin from 172.16.5.10 port 2222
+[2025-08-18 08:31:03] Failed login for user admin from 172.31.200.9 port 2222
+[2025-08-18 08:31:28] INFO Internal scan from 192.168.1.50 to 192.168.10.5 port 443
+[2025-08-18 08:31:51] WARNING External scan from 8.8.8.8 to 192.168.10.5 port 8443
+[2025-08-18 08:32:14] ERROR Connection from 1.1.1.1 denied on port 3389
+[2025-08-18 08:32:40] Suspicious connection 203.0.113.45:4444 detected
+[2025-08-18 08:33:01] Suspicious connection evilc2.ddns.net:9001 established
+[2025-08-18 08:33:29] INFO URL https://www.example.com/index.html status 200
+[2025-08-18 08:33:55] WARNING URL https://shop.example.com/admin.php status 404
+[2025-08-18 08:34:16] ERROR URL http://legacy.example.net/login.php status 500
+[2025-08-18 08:34:41] INFO URL https://portal.university.in/login.php status 200
+[2025-08-18 08:35:04] WARNING URL https://updates.bad-domain.ru/update.php status 302
+[2025-08-18 08:35:30] Suspicious download https://updates.bad-domain.ru/update.php to /tmp/update.sh
+[2025-08-18 08:35:58] Suspicious download http://evil.example.net/dropper.exe to C:\Temp\dropper.exe
+[2025-08-18 08:36:19] ERROR file dropper.exe hash SHA256=3a7bd3e2360a3d80a9d0b7b93d7f90d7c0b8c9a3e9f1d2c4b5a6978877665544
+[2025-08-18 08:36:47] INFO Upload completed to https://files.example.com/upload.php
+[2025-08-18 08:37:12] WARNING upload attempt denied for user guest
+[2025-08-18 08:37:40] Suspicious User-Agent: Mozilla/5.0 EvilScanner/2.1
+[2025-08-18 08:38:02] INFO User-Agent: Mozilla/5.0 Chrome/139.0
+[2025-08-18 08:38:27] WARNING User-Agent: curl/8.5.0
+[2025-08-18 08:38:59] Suspicious User-Agent: python-requests/2.31.0
+[2025-08-18 08:39:21] INFO IPv6 connection from 2001:db8:85a3::8a2e:370:7334
+[2025-08-18 08:39:46] WARNING IPv6 scan detected from fe80::1ff:fe23:4567:890a
+[2025-08-18 08:40:08] INFO Request from 192.168.10.21 status 200
+[2025-08-18 08:40:27] INFO Request from 192.168.10.21 status 200
+[2025-08-18 08:40:51] WARNING Request from 203.0.113.99 status 404
+[2025-08-18 08:41:13] ERROR Request from 203.0.113.99 status 500
+[2025-08-18 08:41:36] Suspicious request from 198.51.100.77 status 403
+[2025-08-18 08:42:01] Failed login for user root from 198.51.100.77 port 2222
+[2025-08-18 08:42:19] Failed login for user root from 198.51.100.77 port 2222
+[2025-08-18 08:42:38] Failed login for user admin from 198.51.100.77 port 2222
+[2025-08-18 08:43:02] WARNING Brute force suspected from 198.51.100.77
+[2025-08-18 08:43:31] INFO Domain accessed example.com
+[2025-08-18 08:43:52] INFO Domain accessed research.org
+[2025-08-18 08:44:11] WARNING Domain accessed suspicious-site.ru
+[2025-08-18 08:44:39] Suspicious Domain accessed command.bad-domain.in
+[2025-08-18 08:45:02] INFO Domain accessed portal.university.in
+[2025-08-18 08:45:26] Suspicious file malware.exe executed by user guest
+[2025-08-18 08:45:49] ERROR file malware.exe hash MD5=5d41402abc4b2a76b9719d911017c592
+[2025-08-18 08:46:10] WARNING file cleanup.sh executed from /tmp/cleanup.sh
+[2025-08-18 08:46:37] INFO file policy.pdf opened by user analyst
+[2025-08-18 08:47:04] Suspicious download of file backdoor.exe from https://command.bad-domain.in/backdoor.exe
+[2025-08-18 08:47:31] ERROR CVE-2025-54321 exploited from 8.8.8.8 port 8080
+[2025-08-18 08:47:55] WARNING CVE-2025-54321 exploit blocked
+[2025-08-18 08:48:21] INFO Security scan completed
+[2025-08-18 08:48:44] DEBUG Temporary diagnostic message
+[2025-08-18 08:49:09] SUCCESS Backup completed successfully
+Suspicious activity detected from 203.0.113.45
+Suspicious malware file evil.exe
+ERROR service terminated with code 137
+WARNING connection retry 3

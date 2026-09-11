@@ -1,0 +1,9 @@
+https://evilc2.ddns.net/update.php
+http://malware-test.example.org/download.php
+https://target.example.com/login.php
+https://shop.example.com/admin.php
+http://legacy.example.net/login.php
+https://portal.university.in/login.php
+https://updates.bad-domain.ru/update.php
+https://updates.bad-domain.ru/update.php
+https://files.example.com/upload.php

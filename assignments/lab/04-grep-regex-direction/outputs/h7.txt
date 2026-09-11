@@ -1,0 +1,15 @@
+command.bad-domain.in
+evil.example.net
+evilc2.ddns.net
+example.com
+files.example.com
+legacy.example.net
+malware-test.example.org
+phishing-example.com
+portal.university.in
+research.org
+shop.example.com
+suspicious-site.ru
+target.example.com
+updates.bad-domain.ru
+www.example.com

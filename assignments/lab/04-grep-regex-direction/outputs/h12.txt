@@ -1,0 +1,5 @@
+example.com
+research.org
+suspicious-site.ru
+command.bad-domain.in
+portal.university.in

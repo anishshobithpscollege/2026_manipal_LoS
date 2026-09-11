@@ -1,0 +1,2 @@
+grep: no_such_file.log: No such file or directory
+10

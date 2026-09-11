@@ -1,0 +1,1 @@
+[2025-08-18 08:33:55] WARNING URL https://shop.example.com/admin.php status 404

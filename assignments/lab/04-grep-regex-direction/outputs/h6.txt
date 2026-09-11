@@ -1,0 +1,3 @@
+[2025-08-18 08:10:01] info server startup completed on 192.168.10.5 port 8080
+[2025-08-18 08:11:14] info user admin logged in from 192.168.10.21
+[2025-08-18 08:12:03] failed login for user root from 203.0.113.45 port 4444
