@@ -1,0 +1,2 @@
+Usage: ./security_log_analyser.sh <logfile>
+exit status: 1

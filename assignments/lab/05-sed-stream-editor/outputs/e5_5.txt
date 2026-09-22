@@ -1,0 +1,10 @@
+Sep XX XX:XX:XX server sshd[XXXX]: Accepted password for admin from XXX.XXX.X.XX
+Sep XX XX:XX:XX server sshd[XXXX]: Failed password for root from XX.X.X.XX
+Sep XX XX:XX:XX server sshd[XXXX]: Failed password for root from XX.X.X.XX
+Sep XX XX:XX:XX server sshd[XXXX]: Accepted password for student from XXX.XXX.X.XX
+Sep XX XX:XX:XX server sshd[XXXX]: Invalid user hacker from XXX.XX.X.X
+Sep XX XX:XX:XX server sshd[XXXX]: Failed password for admin from XXX.XX.X.X
+Sep XX XX:XX:XX server sudo[XXXX]: authentication failure for user student
+Sep XX XX:XX:XX server sshd[XXXX]: Accepted password for analyst from XXX.XXX.X.XX
+Sep XX XX:XX:XX server sshd[XXXX]: Failed password for root from XX.X.X.XX
+Sep XX XX:XX:XX server sshd[XXXX]: Connection closed by XX.X.X.XX

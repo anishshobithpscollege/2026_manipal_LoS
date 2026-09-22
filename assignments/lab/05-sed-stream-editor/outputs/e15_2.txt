@@ -1,0 +1,2 @@
+Error: file 'missing.log' does not exist.
+exit status: 2

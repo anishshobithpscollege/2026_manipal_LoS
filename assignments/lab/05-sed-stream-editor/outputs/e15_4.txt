@@ -1,0 +1,3 @@
+   7 security_alert_report.txt
+  10 auth.log
+  17 total

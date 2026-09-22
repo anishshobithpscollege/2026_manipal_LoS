@@ -1,0 +1,10 @@
+Sep 10 09:10:12 server sshd[1201]: Accepted password for admin from 192.168.1.10
+Sep 10 09:12:15 server sshd[1205]: Failed password for root from 10.0.0.25
+Sep 10 09:12:20 server sshd[1206]: Failed password for root from 10.0.0.25
+Sep 10 09:13:01 server sshd[1210]: Accepted password for student from 192.168.1.15
+Sep 10 09:14:33 server sshd[1215]: Invalid user hacker from 172.16.0.8
+Sep 10 09:15:42 server sshd[1220]: Failed password for admin from 172.16.0.8
+Sep 10 09:16:11 server sudo[1225]: authentication failure for user student
+Sep 10 09:17:30 server sshd[1230]: Accepted password for analyst from 192.168.1.20
+Sep 10 09:18:05 server sshd[1235]: Failed password for root from 10.0.0.30
+Sep 10 09:20:10 server sshd[1240]: Connection closed by 10.0.0.25

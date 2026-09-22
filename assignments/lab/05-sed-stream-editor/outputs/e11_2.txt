@@ -1,0 +1,3 @@
+Sep 10 09:10:12 server sshd[1201]: Accepted password for admin from 192.168.1.10
+Sep 10 09:13:01 server sshd[1210]: Accepted password for student from 192.168.1.15
+Sep 10 09:17:30 server sshd[1230]: Accepted password for analyst from 192.168.1.20

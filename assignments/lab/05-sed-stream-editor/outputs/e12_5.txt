@@ -1,0 +1,10 @@
+192.168.1.10 - READ_REQUEST /index.html 200
+10.0.0.25 - READ_REQUEST /admin/login 401
+172.16.0.8 - READ_REQUEST /search?id=1'OR'1'='1 403
+192.168.1.15 - READ_REQUEST /products.html 200
+10.0.0.30 - READ_REQUEST /../../etc/passwd 403
+172.16.0.9 - SUBMIT_REQUEST /login 401
+192.168.1.20 - READ_REQUEST /contact.html 200
+10.0.0.25 - SUBMIT_REQUEST /admin/login 401
+172.16.0.8 - READ_REQUEST /script?input=<script> 403
+192.168.1.25 - READ_REQUEST /about.html 200

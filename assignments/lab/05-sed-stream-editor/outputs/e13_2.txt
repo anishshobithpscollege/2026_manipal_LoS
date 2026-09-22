@@ -1,0 +1,12 @@
+SECURITY INCIDENT REPORT
+Sep 10 09:10:12 server sshd[1201]: [SUCCESSFUL LOGIN] for admin from [REDACTED_IP]
+Sep 10 09:12:15 server sshd[1205]: [FAILED LOGIN] for root from [REDACTED_IP]
+Sep 10 09:12:20 server sshd[1206]: [FAILED LOGIN] for root from [REDACTED_IP]
+Sep 10 09:13:01 server sshd[1210]: [SUCCESSFUL LOGIN] for student from [REDACTED_IP]
+Sep 10 09:14:33 server sshd[1215]: [INVALID USER ATTEMPT] hacker from [REDACTED_IP]
+Sep 10 09:15:42 server sshd[1220]: [FAILED LOGIN] for admin from [REDACTED_IP]
+Sep 10 09:16:11 server sudo[1225]: authentication failure for user student
+Sep 10 09:17:30 server sshd[1230]: [SUCCESSFUL LOGIN] for analyst from [REDACTED_IP]
+Sep 10 09:18:05 server sshd[1235]: [FAILED LOGIN] for root from [REDACTED_IP]
+Sep 10 09:20:10 server sshd[1240]: Connection closed by [REDACTED_IP]
+END OF INCIDENT REPORT
