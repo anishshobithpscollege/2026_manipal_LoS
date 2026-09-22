@@ -1,0 +1,1 @@
+Sep 10 09:10:12 server sshd[1201]: Accepted password for admin from 192.168.1.10

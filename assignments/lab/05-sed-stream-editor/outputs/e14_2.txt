@@ -1,0 +1,6 @@
+PermitRootLogin no
+PasswordAuthentication yes
+MaxAuthTries 3
+FirewallStatus enabled
+LogLevel VERBOSE
+GuestLogin disabled

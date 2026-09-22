@@ -1,0 +1,15 @@
+backup and .bak are identical
+1c1
+< PermitRootLogin yes
+---
+> PermitRootLogin no
+3,6c3,6
+< MaxAuthTries 6
+< FirewallStatus disabled
+< LogLevel INFO
+< GuestLogin enabled
+---
+> MaxAuthTries 3
+> FirewallStatus enabled
+> LogLevel VERBOSE
+> GuestLogin disabled

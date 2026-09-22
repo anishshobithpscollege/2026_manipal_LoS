@@ -1,0 +1,4 @@
+Sep 10 09:14:33 server sshd[1215]: Invalid user hacker from 172.16.0.8
+Sep 10 09:15:42 server sshd[1220]: Failed password for admin from 172.16.0.8
+172.16.0.8 - GET /search?id=1'OR'1'='1 403
+172.16.0.8 - GET /script?input=<script> 403

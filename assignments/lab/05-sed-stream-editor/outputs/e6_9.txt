@@ -1,0 +1,6 @@
+10.0.0.25 - GET /admin/login 401
+172.16.0.8 - GET /search?id=1'OR'1'='1 403
+10.0.0.30 - GET /../../etc/passwd 403
+172.16.0.9 - POST /login 401
+10.0.0.25 - POST /admin/login 401
+172.16.0.8 - GET /script?input=<script> 403
