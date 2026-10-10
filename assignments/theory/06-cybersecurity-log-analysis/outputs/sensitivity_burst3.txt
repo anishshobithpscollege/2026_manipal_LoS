@@ -1,0 +1,5 @@
+==== 5a. Brute force: >= 3 failures within 300 s ====
+SOURCE_IP         FAILS  BURST FIRST_SEEN     LAST_SEEN
+203.0.113.45        420    159 Oct 7 02:14:00 Oct 7 02:27:59
+10.0.0.23             4      4 Oct 8 09:02:00 Oct 8 09:02:33
+
