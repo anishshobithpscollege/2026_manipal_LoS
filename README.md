@@ -17,6 +17,7 @@ Every push to `main` compiles each assignment to a PDF and attaches it to the [l
 | 03 | Investigating the Linux Filesystem | [PDF](../../releases/download/latest/261100690032_Anish_Shobith_P_S_Linux_OS_and_Scripting_CYE_5103_03.pdf) |
 | 04 | Hard Links, Symbolic Links, and Sorting Security Logs | [PDF](../../releases/download/latest/261100690032_Anish_Shobith_P_S_Linux_OS_and_Scripting_CYE_5103_04.pdf) |
 | 05 | Command-Line Arguments, File Test Operators, and Filters | [PDF](../../releases/download/latest/261100690032_Anish_Shobith_P_S_Linux_OS_and_Scripting_CYE_5103_05.pdf) |
+| 06 | Cybersecurity Log Analysis Using Linux Tools | [PDF](../../releases/download/latest/261100690032_Anish_Shobith_P_S_Linux_OS_and_Scripting_CYE_5103_06.pdf) |
 
 <!-- THEORY:END -->
 
@@ -30,6 +31,7 @@ Every push to `main` compiles each assignment to a PDF and attaches it to the [l
 | 02 | Getting Help, Basic Commands, Globbing and Filters | [PDF](../../releases/download/latest/261100690032_Anish_Shobith_P_S_Linux_OS_and_Scripting_Lab_CYE_5153_02.pdf) |
 | 03 | Grep, Regular Expressions and File Test Operators | [PDF](../../releases/download/latest/261100690032_Anish_Shobith_P_S_Linux_OS_and_Scripting_Lab_CYE_5153_03.pdf) |
 | 04 | Grep, Regular Expressions, Filters and Redirection | [PDF](../../releases/download/latest/261100690032_Anish_Shobith_P_S_Linux_OS_and_Scripting_Lab_CYE_5153_04.pdf) |
+| 05 | sed Stream Editor for Security Log Analysis | [PDF](../../releases/download/latest/261100690032_Anish_Shobith_P_S_Linux_OS_and_Scripting_Lab_CYE_5153_05.pdf) |
 
 <!-- LAB:END -->
 
